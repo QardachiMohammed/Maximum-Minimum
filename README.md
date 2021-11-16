@@ -1,1 +1,43 @@
-# Maximum-Minimum
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Maximumberechner</title>
+		
+	</head>
+			<body>
+				<h1>Maximumberechner</h1>
+					<script>
+
+				function fZahlen() {
+							
+
+				let vZahl1 = document.getElementById("Zahl1").value;
+				let vZahl2 = document.getElementById("Zahl2").value;
+				let vAusgabe = "Maximum " + fMax(vZahl1, vZahl2);
+
+				document.getElementById("idAusgabe").innerHTML = vAusgabe;
+				
+				
+				}
+					
+					function fMax(a,b) {
+
+					if (a>b) {return a} 
+					
+					else {return b}
+					
+				}
+					
+
+					</script>
+			Zahl 1: <input id="Zahl1" type="text" size="5" value="3">
+			Zahl 2: <input id="Zahl2" type="text" size="5" value="5">
+			<button onclick="fZahlen()">Maximum/Minimum berechnen!</button>
+		<br><br>
+		<div id="idAusgabe">Ausgabe vom Maximum.</div>
+
+			</div>
+			<br>
+
+
+</body></html>
